@@ -4,9 +4,9 @@
     {
         static void Main(string[] args)
         {
-            var a = 10.0;
+            var a = InputNumber("A");
 
-            var b = 15.0;
+            var b = InputNumber("B");
 
             Console.WriteLine("Выберите действие: + или -");
             string action = Console.ReadLine();
@@ -76,6 +76,43 @@
         public static double SubtractNumbers(double num1, double num2)
         {
             return num1 - num2;
+        }
+
+        /// <summary>
+        /// Ввод числа с клавиатуры
+        /// </summary>
+        /// <returns>Введённое число</returns>
+        public static double InputNumber(string numberName)
+        {
+            Console.WriteLine($"Введите число {numberName}:");
+
+            while(true)
+            {
+                string enteredNumberAsString = Console.ReadLine();
+
+                double result;
+                if (double.TryParse(enteredNumberAsString, out result))
+                {
+                    return result;
+                }
+
+                Console.WriteLine("Вы ввели не число, повторите ввод!");
+            }
+
+
+            //try
+            //{
+            //    return double.Parse(enteredNumberAsString);
+            //}
+            //catch(Exception ex)
+            //{
+            //    Console.WriteLine("Вы ввели не число, программа завершает свою работу!");
+            //    Console.WriteLine($"Произошла ошибка: { ex.Message }");
+            //    Console.WriteLine($"Stack trace: { ex.StackTrace }");
+            //    WaitForExit();
+
+            //    return double.NaN;
+            //}
         }
     }
 }
