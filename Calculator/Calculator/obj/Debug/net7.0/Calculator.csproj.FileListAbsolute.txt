@@ -1,0 +1,15 @@
+D:\Lessons\NetLesson1\Calculator\Calculator\bin\Debug\net7.0\Calculator.exe
+D:\Lessons\NetLesson1\Calculator\Calculator\bin\Debug\net7.0\Calculator.deps.json
+D:\Lessons\NetLesson1\Calculator\Calculator\bin\Debug\net7.0\Calculator.runtimeconfig.json
+D:\Lessons\NetLesson1\Calculator\Calculator\bin\Debug\net7.0\Calculator.dll
+D:\Lessons\NetLesson1\Calculator\Calculator\bin\Debug\net7.0\Calculator.pdb
+D:\Lessons\NetLesson1\Calculator\Calculator\obj\Debug\net7.0\Calculator.csproj.AssemblyReference.cache
+D:\Lessons\NetLesson1\Calculator\Calculator\obj\Debug\net7.0\Calculator.GeneratedMSBuildEditorConfig.editorconfig
+D:\Lessons\NetLesson1\Calculator\Calculator\obj\Debug\net7.0\Calculator.AssemblyInfoInputs.cache
+D:\Lessons\NetLesson1\Calculator\Calculator\obj\Debug\net7.0\Calculator.AssemblyInfo.cs
+D:\Lessons\NetLesson1\Calculator\Calculator\obj\Debug\net7.0\Calculator.csproj.CoreCompileInputs.cache
+D:\Lessons\NetLesson1\Calculator\Calculator\obj\Debug\net7.0\Calculator.dll
+D:\Lessons\NetLesson1\Calculator\Calculator\obj\Debug\net7.0\refint\Calculator.dll
+D:\Lessons\NetLesson1\Calculator\Calculator\obj\Debug\net7.0\Calculator.pdb
+D:\Lessons\NetLesson1\Calculator\Calculator\obj\Debug\net7.0\Calculator.genruntimeconfig.cache
+D:\Lessons\NetLesson1\Calculator\Calculator\obj\Debug\net7.0\ref\Calculator.dll

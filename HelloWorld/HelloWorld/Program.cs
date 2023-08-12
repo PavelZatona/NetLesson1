@@ -29,7 +29,7 @@
             }
             else
             {
-                Console.WriteLine("Вы ввели некорректную операцию!");
+                Console.WriteLine("Вы ввели не корректную операцию!");
                 WaitForExit();
             }
 
