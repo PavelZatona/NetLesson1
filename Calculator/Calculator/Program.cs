@@ -7,8 +7,11 @@ namespace Calculator
         static void Main(string[] args)
         {
             var a = InputNumber("A");
+
             var b = InputNumber("B");
+
             Console.WriteLine("Выберите действие: + - * или /");
+
             string action = Console.ReadLine();
 
             double c = 0;
@@ -42,12 +45,89 @@ namespace Calculator
             else
             {
                 Console.WriteLine("Вы ввели не корректную операцию)");
+                WaitForExit();
             }
 
             Console.WriteLine($"{actionName} {a} и {b} равно{c}");
 
+            RequestForNewOperation(); 
+
             WaitForExit();
         }
+
+        /// <summary>
+        /// Предложение пользователю повторно выполнить операцию
+        /// </summary>
+        public static void RequestForNewOperation()
+
+        {
+            Console.WriteLine("Введите y если вы хотите выполнить новую операцию или n для остановки программы.");
+            while (true)
+            {
+                var key = Console.ReadKey();
+                if (key.KeyChar.ToString().ToLower() == "y")
+                {
+                    {
+                        var a = InputNumber("A");
+
+                        var b = InputNumber("B");
+
+                        Console.WriteLine("Выберите действие: + - * или /");
+
+                        string action = Console.ReadLine();
+
+                        double c = 0;
+
+                        string actionName = string.Empty;
+
+                        if (action == "+")
+                        {
+                            // Действие сложения
+                            c = AddNumbers(a, b);
+                            actionName = "Сумма";
+                        }
+                        else if (action == "-")
+                        {
+                            //Действие вычитания
+                            c = SubtractNumbers(a, b);
+                            actionName = "Разность";
+                        }
+                        else if (action == "*")
+                        {
+                            //Действие умножения
+                            c = MultiplicationNumbers(a, b);
+                            actionName = "Произведение";
+                        }
+                        else if (action == "/")
+                        {
+                            //Действие деления
+                            c = DivisionNumbers(a, b);
+                            actionName = "Деление";
+                        }
+                        else
+                        {
+                            Console.WriteLine("Вы ввели не корректную операцию)");
+                            WaitForExit();
+                        }
+
+                        Console.WriteLine($"{actionName} {a} и {b} равно{c}");
+
+                        RequestForNewOperation();
+
+                        WaitForExit();
+                    }
+                }
+                else if (key.KeyChar.ToString().ToLower() == "n")
+                {
+                    Environment.Exit(0);
+                }
+                else
+                {
+                    Console.WriteLine("Вы ввели неправильную команду");
+                }
+            }
+        }
+
         /// <summary>
         /// Wait for exit from program
         /// </summary>
